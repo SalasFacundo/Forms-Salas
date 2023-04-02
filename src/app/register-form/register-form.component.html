@@ -10,8 +10,12 @@
                 [class.is-invalid]="formulario.get('userName')?.touched && formulario.get('userName')?.invalid"
             >
             <div class="invalid-feedback">
-                <span *ngIf="this.formulario.get('userName')?.errors?.['required']">El campo es requerido</span>
-                <span *ngIf="this.formulario.get('userName')?.errors?.['minlength']">El campo debe tener mas de {{formulario.get('userName')?.errors?.['minlength'].requiredLength | json}}</span>
+                <span *ngIf="this.formulario.get('userName')?.errors?.['required']">
+                    El campo es requerido
+                </span>
+                <span *ngIf="this.formulario.get('userName')?.errors?.['minlength']">
+                    El campo debe tener mas de {{formulario.get('userName')?.errors?.['minlength'].requiredLength}}
+                </span>
             </div>
         </div>
         <div class="col-md-6">
@@ -25,8 +29,12 @@
                 [class.is-invalid]="formulario.get('userLastName')?.touched && formulario.get('userLastName')?.invalid"
             >
             <div class="invalid-feedback">
-                <span *ngIf="this.formulario.get('userLastName')?.errors?.['required']">El campo es requerido</span>
-                <span *ngIf="this.formulario.get('userLastName')?.errors?.['minlength']">Campo invalido</span>
+                <span *ngIf="this.formulario.get('userLastName')?.errors?.['required']">
+                    El campo es requerido
+                </span>
+                <span *ngIf="this.formulario.get('userLastName')?.errors?.['minlength']">
+                    El campo debe tener mas de {{formulario.get('userLastName')?.errors?.['minlength'].requiredLength}}
+                </span>
             </div>
         </div>        
         <div class="col-md-4">
@@ -39,8 +47,12 @@
                 [class.is-invalid]="formulario.get('country')?.touched && formulario.get('country')?.invalid"
             >
             <div class="invalid-feedback">
-                <span *ngIf="this.formulario.get('country')?.errors?.['required']">El campo es requerido</span>
-                <span *ngIf="this.formulario.get('country')?.errors?.['minlength']">Campo invalido</span>
+                <span *ngIf="this.formulario.get('country')?.errors?.['required']">
+                    El campo es requerido
+                </span>
+                <span *ngIf="this.formulario.get('country')?.errors?.['minlength']">
+                    El campo debe tener mas de {{formulario.get('country')?.errors?.['minlength'].requiredLength}}
+                </span>
             </div>
         </div>
         <div class="col-md-4">
@@ -53,8 +65,12 @@
                 [class.is-invalid]="formulario.get('province')?.touched && formulario.get('province')?.invalid"
             >
             <div class="invalid-feedback">
-                <span *ngIf="this.formulario.get('province')?.errors?.['required']">El campo es requerido</span>
-                <span *ngIf="this.formulario.get('province')?.errors?.['minlength']">Campo invalido</span>
+                <span *ngIf="this.formulario.get('province')?.errors?.['required']">
+                    El campo es requerido
+                </span>
+                <span *ngIf="this.formulario.get('province')?.errors?.['minlength']">
+                    El campo debe tener mas de {{formulario.get('province')?.errors?.['minlength'].requiredLength}}
+                </span>
             </div>
         </div>
         <div class="col-md-4">
@@ -67,8 +83,12 @@
                 [class.is-invalid]="formulario.get('city')?.touched && formulario.get('city')?.invalid"
             >
             <div class="invalid-feedback">
-                <span *ngIf="this.formulario.get('city')?.errors?.['required']">El campo es requerido</span>
-                <span *ngIf="this.formulario.get('city')?.errors?.['minlength']">Campo invalido</span>
+                <span *ngIf="this.formulario.get('city')?.errors?.['required']">
+                    El campo es requerido
+                </span>
+                <span *ngIf="this.formulario.get('city')?.errors?.['minlength']">
+                    El campo debe tener mas de {{formulario.get('city')?.errors?.['minlength'].requiredLength}}
+                </span>
             </div>
         </div> 
         <div class="col-md-4">
@@ -82,8 +102,12 @@
                     [class.is-invalid]="formulario.get('email')?.touched && formulario.get('email')?.invalid"
                 >
                 <div class="invalid-feedback">
-                    <span *ngIf="this.formulario.get('email')?.errors?.['required']">El campo es requerido</span>
-                    <span *ngIf="this.formulario.get('email')?.errors?.['email']">El email es invalido</span>                    
+                    <span *ngIf="this.formulario.get('email')?.errors?.['required']">
+                        El campo es requerido
+                    </span>
+                    <span *ngIf="this.formulario.get('email')?.errors?.['email']">
+                        El email es invalido
+                    </span>                    
                 </div>
         </div>       
         <div class="col-12">
